@@ -1,0 +1,13 @@
+<div id="gmap">
+  <div #gmap class="map"></div>
+  <app-media-comp></app-media-comp>
+  <app-dash (onAction)="onAction($event)"></app-dash>
+  <div id="btn-block">
+    <button (click)="polygonEnable()">Show/hide Polygon</button>
+    <button (click)="makePolygon(0)">Make Rectangle</button>
+    <button (click)="makePolygon(1)">Make Circle</button>
+    <button (click)="makePolygon(2)">Make Area</button>
+    <button (click)="onSetMarkerClick()">Set markers</button>
+    <button (click)="onRemoveMarkersClick()">Remove markers</button>
+  </div>
+</div>

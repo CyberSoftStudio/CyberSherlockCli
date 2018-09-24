@@ -1,0 +1,289 @@
+@color_main: #ff9a17;
+@color_main_transparent: rgba(255, 154, 23, 0.41);
+@color_main_light: rgb(255, 205, 146);
+@color_main_superlight: rgb(255, 233, 215);
+@color_main_dark: #9c5b13;
+@color_light: #fff;
+@color_dark: #000;
+@color_dark_grey: #777;
+@color_dark_light: #eee;
+@color_error: #f00;
+.cysh-button-default{
+  .cysh-font;
+  display:block;
+  position:relative;
+  margin:3px;
+  padding:0 15px;
+  border:1px solid @color_main_dark;
+  border-radius: 3px;
+  background: @color_main_superlight;
+  color: @color_main_dark;
+  cursor:pointer;
+  transition: background 0.3s;
+};
+.cysh-button-default:hover{
+  background: @color_main_light;
+};
+.cysh-button-danger{
+  .cysh-button-default;
+  color: @color_error;
+};
+.cysh-button-circle{};
+.cysh-button-small{};
+.cysh-button-large{};
+.cysh-paragraph-info{
+  h1{
+    color: @color_main_dark;
+    background: @color_main_light;
+    margin:0;
+    padding: 3px 5px;
+  }
+  p{
+    .cysh-font-small;
+    margin:0;
+    padding: 5px;
+    background: @color_main_superlight;
+  }
+  color: @color_dark;
+  box-shadow: 5px 5px 10px @color_dark_grey;
+};
+.cysh-paragraph-error{
+  h1{
+    color: @color_error;
+    background: @color_main_light;
+    margin:0;
+    padding: 3px 5px;
+    border-bottom:1px solid @color_error;
+  }
+  p{
+    .cysh-font-small;
+    margin:0;
+    padding: 5px;
+  }
+  color: @color_error;
+  box-shadow: 5px 5px 10px @color_dark_grey;
+};
+.cysh-paragraph-alert{};
+.cysh-paragraph-contrast{
+  h1{
+    color: @color_light;
+    background: @color_dark;
+    margin:0;
+    padding: 3px 5px;
+  }
+  p{
+    .cysh-font-small;
+    margin:0;
+    padding: 5px;
+    background: @color_main_dark;
+  }
+  color: @color_light;
+  box-shadow: 7px 7px 10px @color_dark_grey;
+};
+.cysh-paragraph-transparent{
+  h1{
+    color: @color_main_light;
+    margin:0;
+    padding: 3px 5px;
+    border-bottom: 1px solid @color_main_light;
+  }
+  p{
+    .cysh-font-small;
+    margin:0;
+    padding: 5px;
+    background: @color_main_transparent;
+  }
+  color: @color_light;
+};
+.cysh-paragraph-transparent-light{};
+.cysh-paragraph-transparent-dark{};
+.cysh-card-light{
+  margin:0;
+  padding:10px;
+  width: 300px;
+};
+.cysh-active-rotate{
+  cursor:pointer;
+  transition: transform 0.3s;
+  transform: perspective(500px);
+};
+.cysh-active-rotate:hover{
+  transform: perspective(500px) translateZ(-10px) rotateY(25deg);
+};
+.cysh-card-dark{};
+.cysh-default{};
+.cysh-transparent{
+  background: transparent;
+};
+.cysh-transparent-light{};
+.cysh-transparent-dark{};
+.cysh-font{
+  font-size: 25px;
+};
+.cysh-font-small{
+  font-size:15px;
+};
+.cysh-font-large{
+  font-size:35px;
+};
+.cysh-font-Xlarge{
+  font-size:60px;
+};
+.cysh-menu-top{};
+.cysh-menu-shiftrigth{};
+.cysh-container{
+  display:block;
+  position: relative;
+  padding:0;
+  margin:0;
+  width:100%;
+};
+.cysh-container-dark{
+  .cysh-container;
+  background: @color_dark;
+};
+.cysh-container-dark-gradient{
+  .cysh-container;
+  background: linear-gradient(200deg, @color_dark_light, @color_main_light);
+};
+.cysh-container-dark-img{
+  .cysh-container;
+  img{
+    display:block;
+    position:absolute;
+    top:0;
+    left:0;
+    opacity: 0.4;
+  };
+  padding:0;
+  background: @color_dark;
+  overflow: hidden;
+};
+.cysh-container-light-img{};
+.cysh-flex-blocks-central{
+  display:flex;
+  flex-flow:row wrap;
+  justify-content: center;
+  padding:10px;
+  div{
+    flex-direction: row;
+  }
+};
+.cysh-flex-blocks-left{};
+.cysh-flex-blocks-rigth{};
+.cysh-flex-row{};
+
+html,body{
+  display:block;
+  position: relative;
+  margin:0;
+  padding:0;
+}
+body {
+  width: 100%;
+}
+@font-face {
+  font-family: cyshFont;
+  src: url('/assets/Raleway Thin.otf');
+}
+@import url('https://fonts.googleapis.com/css?family=Alegreya');
+
+h1,h2,h3,h4,h5,h6,div,a,p,span,label,input,button{
+  font-family: "Alegreya", sans-serif;
+  font-weight:100;
+}
+.cysh-btn-3d{
+  display:block;
+  position: relative;
+  width: 100px;
+  height: 50px;
+  transform: perspective(1500px);
+  div{
+    div{
+      p{
+        display:block;
+        position: absolute;
+        margin:0;
+        padding:0;
+        top:-3px;
+        left:7px;
+      };
+      display:block;
+      position:absolute;
+      background: @color_main_light;
+      border: 1px solid @color_main_dark;
+      width:60px;
+      transition: transform 0.3s;
+    };
+    .b1{
+      height: 15px;
+      transform: perspective(1500px) rotateX(0deg) rotateY(0deg) translate3d(0px,0px,0px);
+    };
+    .b2{
+      height: 15px;
+      transform: perspective(1500px) rotateX(0deg) rotateY(0deg) translate3d(0px,0px,0px);
+    };
+    .b3{
+      span{
+        display:block;
+        position:absolute;
+        height:40px;
+        width:2px;
+        top:10px;
+        left:15px;
+        background: @color_main_dark;
+      };
+      span:nth-child(2){
+        left:30px;
+      };
+      span:nth-child(3){
+        left:45px;
+      };
+      height: 60px;
+      transform: perspective(1500px) rotateY(0deg)
+      rotateX(0deg) rotateZ(0deg) translate3d(0px,0px,0px);
+    };
+    .b4{
+      height: 60px;
+      transform: perspective(1500px) rotateX(0deg) rotateZ(0deg) translate3d(0px,0px,0px);
+      background: transparent;
+      border: none;
+      box-shadow: 40px 40px 20px @color_dark_grey;
+    };
+    display:block;
+    position:absolute;
+    right:-100px;
+    transform: perspective(1500px) rotateX(65deg) rotateZ(45deg) translate3d(-60px,-60px,0px);// rotateX(30deg);
+  }
+}
+
+body{
+  .start-slide{
+    .cysh-container-dark-img;
+    div{
+      h1{
+        span{
+          color: @color_light;
+        };
+        .cysh-font-Xlarge;
+        text-align: center;
+        border: none;
+      };
+      p{
+        text-align: center;
+        margin-left: -50%;
+        width:200%;
+      };
+      display:inline;
+      position:absolute;
+      left:0;
+      bottom:400px;
+      width:100%;
+    };
+    //background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(/assets/img/odessa.png);
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  transform: perspective(1000px);
+}
+

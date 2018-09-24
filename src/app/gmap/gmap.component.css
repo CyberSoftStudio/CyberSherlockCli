@@ -1,0 +1,22 @@
+#gmap .map {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  align-content: baseline;
+  height: 100vh;
+  width: 100vw;
+}
+#gmap #btn-block {
+  position: fixed;
+  bottom: 10px;
+}
+#gmap #btn-block button {
+  position: relative;
+  margin: 20px;
+  padding: 30px;
+  cursor: pointer;
+  background: linear-gradient(#000000, #d3d3d3);
+  border: none;
+  color: burlywood;
+}

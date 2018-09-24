@@ -1,0 +1,1 @@
+export {HowtoComponent} from './howto.component';
